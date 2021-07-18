@@ -130,7 +130,7 @@ idx = np.random.randint(0,X_test.shape[0])
 
 p = model.predict(np.array([X_test[idx]]))
 p = np.argmax(p, axis=-1)
-true = np.argmax(y_test[i], -1)
+true = np.argmax(y_test[idx], -1)
 
 print("Example #{}".format(idx))
 
